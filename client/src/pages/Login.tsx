@@ -2,19 +2,26 @@ import React from 'react';
 import { getCurrentUserInfo, login } from '../api/login'
 import { useRouter } from '../hooks/useRouter'
 
-// TODO 3-2.: 이미 로그인된 유저인지 판별
-const isLoggedIn = async (): Promise<boolean> => {
-  return false
-}
-
 const Login = () => {
   const { routeTo } = useRouter()
+
+  // TODO 3-2.: 이미 로그인된 유저인지 판별
+  const isLoggedIn = async (): Promise<boolean> => {
+    const userProfileResponse = await getCurrentUserInfo()
+    return userProfileResponse !== null
+  }
+
   const loginSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // FormData를 이용해서 로그인 시도
     const formData = new FormData(event.currentTarget)
 
     // TODO 3-2.: 이미 로그인된 상태라면 page-a로 라우팅
+    const isUserLoggedIn: boolean = await isLoggedIn()
+    if (isUserLoggedIn) {
+      routeTo('/page-a')
+      return
+    }
 
     const loginResult = await login({
       username: formData.get('username') as string,
@@ -22,6 +29,11 @@ const Login = () => {
     })
 
     // TODO 3-1.: 로그인 실패시 함수 종료. 로그인 성공시 '/page-a'로 이동
+    if (loginResult === 'fail') {
+      alert('로그인 실패')
+      return
+    }
+    routeTo('/page-a')
   }
 
   return (<div className="non-logged-in-body">

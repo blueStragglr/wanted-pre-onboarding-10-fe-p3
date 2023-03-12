@@ -13,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarContent, userProfile }) => {
 
   const sidebarMenuClickHandler = (path: string) => {
     // TODO 3-2: 사이드바 메뉴 클릭시 이벤트 처리
-    // path argument를 받아서 routeTo 함수에 전달
+    routeTo(path)
   }
 
   return (<div className="sidebar">
@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarContent, userProfile }) => {
       }
     </ul>
     <div>
-      { userProfile ? <div className="sidebar-footer">{userProfile.userInfo.name}님 환영합니다.</div> : <div>로그인이 필요합니다.</div>}
+      { userProfile ? <div className="sidebar-footer">{userProfile.userInfo?.name}님 환영합니다.</div> : <div>로그인이 필요합니다.</div>}
     </div>
   </div>)
 }
