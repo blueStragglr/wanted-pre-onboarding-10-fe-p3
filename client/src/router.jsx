@@ -1,18 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
-import GeneralLayout from './layout/GeneralLayout.jsx'
-import Home from './pages/Home.jsx'
-import Login from './pages/Login.jsx'
-import PageA from './pages/PageA.jsx'
-import PageB from './pages/PageB.jsx'
-import PageC from './pages/PageC.jsx'
-
-// interface RouterElement {
-//   id: number // 페이지 아이디 (반복문용 고유값)
-//   path: string // 페이지 경로
-//   label: string // 사이드바에 표시할 페이지 이름
-//   element: React.ReactNode // 페이지 엘리먼트
-//   withAuth?: boolean // 인증이 필요한 페이지 여부
-// }
+import GeneralLayout from './layout/GeneralLayout'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import PageA from './pages/PageA'
+import PageB from './pages/PageB'
+import PageC from './pages/PageC'
 
 const routerData = [
   // TODO 3-1: 로그인 페이지 라우터 등록하기 ('login', withAuth: false)
