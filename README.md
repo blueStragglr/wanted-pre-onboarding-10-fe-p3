@@ -16,12 +16,17 @@
 ```
 
 이 때, CORS 이슈를 방지하기 위해 아래의 방법을 이용해 브라우저를 실행합니다.
-![img_1.png](img_1.png)
+
 ```
-# MacOS
+# MacOS terminal
 
-$ ![img.png](img.png)
+$ open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security
+```
 
+```
+# Windows PowerShell
+
+$ "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir=%LOCALAPPDATA%\Google\chromeTemp -–allow-file-access-from-files
 ```
 
 서버는 4000번 포트를 사용합니다. 서버가 정상적으로 실행되었다면 브라우저를 통해 `localhost:4000`에 접근하였을 때 'Hello World!'가 출력됩니다.
