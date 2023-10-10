@@ -1,4 +1,4 @@
-# Wanted Pre-onboarding 3월 FE 코스 3일차 실습
+# Wanted Pre-onboarding 10월 FE 코스 3일차 실습
 
 > 3일차 실습을 위한 스켈레톤 코드 및 샘플 서버입니다. 강의를 듣고 설명에 따라 실습을 진행해보세요!
 
