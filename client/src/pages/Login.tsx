@@ -14,8 +14,6 @@ const Login = () => {
     // FormData를 이용해서 로그인 시도
     const formData = new FormData(event.currentTarget)
 
-    // TODO 3-2.: 이미 로그인된 상태라면 page-a로 라우팅
-
     const loginResult = await login({
       username: formData.get('username') as string,
       password: formData.get('password') as string
@@ -23,6 +21,11 @@ const Login = () => {
 
     // TODO 3-1.: 로그인 실패시 함수 종료. 로그인 성공시 '/page-a'로 이동
   }
+
+  // TODO 3-2.: 이미 로그인된 상태라면 page-a로 라우팅
+  // if (isLoggedIn()) {
+  //   routeTo('/page-a')
+  // } 같은 코드 작성(실제로는 async라서 동작하지 않음)
 
   return (<div className="non-logged-in-body">
     <h1>

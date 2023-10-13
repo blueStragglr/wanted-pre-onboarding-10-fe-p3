@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="861c6175-e18f-4c92-9ec1-28f44a01d6f8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/blueStragglr/WebstormProjects/wanted/wanted-pre-onboarding-3-FE-practices-3/server/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/blueStragglr/WebstormProjects/wanted/wanted-pre-onboarding-3-FE-practices-3/client/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
