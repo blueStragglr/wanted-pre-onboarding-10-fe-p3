@@ -9,7 +9,7 @@
   # 패키지매니저를 변경하려면 yarn.lock을 삭제 후 npm install 등을 실행합니다.
   
   # 처음 한 번만 실행. 서버/클라이언트 의존성 설치가 동시에 이루어집니다.
-  $ yarn init 
+  $ yarn initialize 
 
   # 서버 실행
   $ yarn server
